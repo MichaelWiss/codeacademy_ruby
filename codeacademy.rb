@@ -33,9 +33,18 @@ when "update"
 end
         
 when "display"
-  puts "Movies!"
+  movies.each do |m, r| 
+      puts "#{m}: #{r}"
+  end
 when "delete"
-  puts "Deleted"
+  puts "Which movie would you like to delete?"
+  title = gets.chomp
+  if  movies[title.to_sym].nil?
+      puts "The movie is not in the database."
+  else
+      movies.delete(title)
+      puts "The #{title} has been deleted."
+  end
 else 
   puts "Error!"
 end
