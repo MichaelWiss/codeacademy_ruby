@@ -54,24 +54,47 @@
 #Object Oriented Ruby
 
 
-class Message
-    @@messages_sent = 0
-    def initialize(from, to)
-        @from = from
-        @to = to
-        @@messages_sent +=1
+# class Message
+#     @@messages_sent = 0
+#     def initialize(from, to)
+#         @from = from
+#         @to = to
+#         @@messages_sent +=1
+#   end
+# end  
+
+# my_message = Message.new(3, 17)
+# class Email < Message
+#   def initialize(from, to)
+#      super
+#   end
+#  end
+
+
+
+#virtual computer
+
+
+class Computer
+    @@users ={}
+    def initialize(username, password)
+        @username = username
+        @password = password
+        @files = {}
+        @@users[username] = password
   end
-end  
-
-my_message = Message.new(3, 17)
-class Email < Message
-  def initialize(from, to)
-     super
+  def create(filename)
+      time = Time.now
+      @files[filename] = time
+      puts "The #{filename} was created at #{time}."
   end
- end
+    def Computer.get_users
+       @@users
+    end
+end
 
+my_computer = Computer.new("Mike", "ekim")
 
-
-
+puts my_computer
 
 
