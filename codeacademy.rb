@@ -86,7 +86,7 @@ class Computer
   def create(filename)
       time = Time.now
       @files[filename] = time
-      puts "The #{filename} was created at #{time}."
+      puts "#{@username} created a file named #{filename} at #{time}."
   end
     def Computer.get_users
        @@users
@@ -95,6 +95,6 @@ end
 
 my_computer = Computer.new("Mike", "ekim")
 
-puts my_computer
+puts Computer.get_users
 
 
