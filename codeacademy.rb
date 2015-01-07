@@ -99,34 +99,75 @@
 
 #module, multiple inheritance
 
-module MartialArts
-  def swordsman
-      puts "I'm a swordsman."
-  end
-end  
+# module MartialArts
+#   def swordsman
+#       puts "I'm a swordsman."
+#   end
+# end  
 
 
-class Ninja
-  attr_accessor :clan
-  include MartialArts
-  def initialize(clan)
-    @clan = clan
+# class Ninja
+#   attr_accessor :clan
+#   include MartialArts
+#   def initialize(clan)
+#     @clan = clan
     
-  end
+#   end
+# end
+
+# class Samurai
+#   attr_reader :shogun
+#   include MartialArts
+#   def initialize(shogun)
+#     @shogun = shogun
+#   end
+# end
+
+# me=Ninja.new("Wiss")
+# puts me.clan
+
+# you=Samurai.new("Antoinette")
+# puts you.shogunm
+
+#Banking exercise
+
+class Account
+    attr_reader :name
+    attr_reader :balance
+    def initialize(name, balance=100)
+        @name = name
+        @balance = balance
+    end
+    private
+    def pin
+        @pin = 1234
+    end
+    def pin_error
+        return "Access denied: incorrect PIN."
+    end
+    public
+    def display_balance(pin_number)
+        if pin_number = pin
+            puts "Balance: $#{@balance}."
+    else
+        puts pin_error
+    end
 end
 
-class Samurai
-  attr_reader :shogun
-  include MartialArts
-  def initialize(shogun)
-    @shogun = shogun
-  end
+public
+  def withdraw(pin_number, amount)
+      if pin_number == pin
+          @balance - amount
+          puts "Withdrew #{amount}. New balance: $#{@balance}."
+      else
+          puts pin_error
+      end
+   end
+      
 end
 
-me=Ninja.new("Wiss")
-puts me.clan
-
-you=Samurai.new("Antoinette")
-puts you.shogun
+checking_account = Account.new("Mike", 10000000)
+puts checking_account.balance
+puts checking_account.name
 
 
