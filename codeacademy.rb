@@ -75,26 +75,58 @@
 #virtual computer
 
 
-class Computer
-    @@users ={}
-    def initialize(username, password)
-        @username = username
-        @password = password
-        @files = {}
-        @@users[username] = password
+# class Computer
+#     @@users ={}
+#     def initialize(username, password)
+#         @username = username
+#         @password = password
+#         @files = {}
+#         @@users[username] = password
+#   end
+#   def create(filename)
+#       time = Time.now
+#       @files[filename] = time
+#       puts "#{@username} created a file named #{filename} at #{time}."
+#   end
+#     def Computer.get_users
+#        @@users
+#     end
+# end
+
+# my_computer = Computer.new("Mike", "ekim")
+
+# puts Computer.get_users
+
+#module, multiple inheritance
+
+module MartialArts
+  def swordsman
+      puts "I'm a swordsman."
   end
-  def create(filename)
-      time = Time.now
-      @files[filename] = time
-      puts "#{@username} created a file named #{filename} at #{time}."
+end  
+
+
+class Ninja
+  attr_accessor :clan
+  include MartialArts
+  def initialize(clan)
+    @clan = clan
+    
   end
-    def Computer.get_users
-       @@users
-    end
 end
 
-my_computer = Computer.new("Mike", "ekim")
+class Samurai
+  attr_reader :shogun
+  include MartialArts
+  def initialize(shogun)
+    @shogun = shogun
+  end
+end
 
-puts Computer.get_users
+me=Ninja.new("Wiss")
+puts me.clan
+
+you=Samurai.new("Antoinette")
+puts you.shogun
 
 
