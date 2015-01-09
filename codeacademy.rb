@@ -175,4 +175,8 @@ checking_account1 = Account.new("Antoinette", 20000000)
 puts checking_account1.balance
 puts checking_account1.name
 
+checking_account1 = Account.new("Marianna", 30000000)
+puts checking_account2.balance
+puts checking_account2.name
+
 
