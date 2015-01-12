@@ -175,8 +175,16 @@ checking_account1 = Account.new("Antoinette", 20000000)
 puts checking_account1.balance
 puts checking_account1.name
 
-checking_account1 = Account.new("Marianna", 30000000)
+checking_account2 = Account.new("Marianna", 30000000)
 puts checking_account2.balance
 puts checking_account2.name
+
+#Learn to Program notes
+
+def double_this num
+num_times_2 = num*2
+puts num.to_s+' doubled is '+num_times_2.to_s
+end
+double_this 44
 
 
