@@ -187,4 +187,21 @@ puts num.to_s+' doubled is '+num_times_2.to_s
 end
 double_this 44
 
+# writing a class
+
+class Procrastination
+  attr_reader :time
+  attr_reader :money
+  def initialize(time, money)
+    @time = time
+    @money = money
+  end
+  public
+  def wasted
+    puts "I have wasted #{@time} hours and $#{@money}"
+  end
+end
+procrastination1 = Procrastination.new("8", "200")
+puts procrastination1.wasted
+
 
