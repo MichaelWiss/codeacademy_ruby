@@ -127,96 +127,141 @@
 # puts me.clan
 
 # you=Samurai.new("Antoinette")
-# puts you.shogunm
+# puts you.shogun
+# puts me.swordsman
 
 #Banking exercise
 
-class Account
-    attr_reader :name
-    attr_reader :balance
-    def initialize(name, balance=100)
-        @name = name
-        @balance = balance
-    end
-    private
-    def pin
-        @pin = 1234
-    end
-    def pin_error
-        return "Access denied: incorrect PIN."
-    end
-    public
-    def display_balance(pin_number)
-        if pin_number = pin
-            puts "Balance: $#{@balance}."
-    else
-        puts pin_error
-    end
-end
+# class Account
+#     attr_reader :name
+#     attr_reader :balance
+#     def initialize(name, balance=100)
+#         @name = name
+#         @balance = balance
+#     end
+#     private
+#     def pin
+#         @pin = 1234
+#     end
+#     def pin_error
+#         return "Access denied: incorrect PIN."
+#     end
+#     public
+#     def display_balance(pin_number)
+#         if pin_number = pin
+#             puts "Balance: $#{@balance}."
+#     else
+#         puts pin_error
+#     end
+# end
 
-public
-  def withdraw(pin_number, amount)
-      if pin_number == pin
-          @balance - amount
-          puts "Withdrew #{amount}. New balance: $#{@balance}."
-      else
-          puts pin_error
-      end
-   end
+# public
+#   def withdraw(pin_number, amount)
+#       if pin_number == pin
+#           @balance - amount
+#           puts "Withdrew #{amount}. New balance: $#{@balance}."
+#       else
+#           puts pin_error
+#       end
+#    end
       
-end
+# end
 
-checking_account = Account.new("Mike", 10000000)
-puts checking_account.balance
-puts checking_account.name
+# checking_account = Account.new("Mike", 10000000)
+# puts checking_account.balance
+# puts checking_account.name
 
 
-checking_account1 = Account.new("Antoinette", 20000000)
-puts checking_account1.balance
-puts checking_account1.name
+# checking_account1 = Account.new("Antoinette", 20000000)
+# puts checking_account1.balance
+# puts checking_account1.name
 
-checking_account2 = Account.new("Marianna", 30000000)
-puts checking_account2.balance
-puts checking_account2.name
+# checking_account2 = Account.new("Marianna", 30000000)
+# puts checking_account2.balance
+# puts checking_account2.name
 
-#Learn to Program notes
+# #Learn to Program notes
 
-def double_this num
-num_times_2 = num*2
-puts num.to_s+' doubled is '+num_times_2.to_s
-end
-double_this 44
+# def double_this num
+# num_times_2 = num*2
+# puts num.to_s+' doubled is '+num_times_2.to_s
+# end
+# double_this 44
 
-# writing a class
+# # writing a class
 
-class Procrastination
-  attr_reader :time
-  attr_reader :money
-  def initialize(time, money)
-    @time = time
-    @money = money
-  end
-  public
-  def wasted
-    puts "I have wasted #{@time} hours and $#{@money}"
-  end
-end
-procrastination1 = Procrastination.new("8", "200")
-puts procrastination1.wasted
+# class Procrastination
+#   attr_reader :time
+#   attr_reader :money
+#   def initialize(time, money)
+#     @time = time
+#     @money = money
+#   end
+#   public
+#   def wasted
+#     puts "I have wasted #{@time} hours and $#{@money}"
+#   end
+# end
+# procrastination1 = Procrastination.new("8", "200")
+# puts procrastination1.wasted
 
-#Learn to program exercise
-puts "Hello, and welcome to seventh grade English." 
-puts "My name is Mrs. Gabbard. And your name is....?"
-name = gets.chomp
-   if name == name.capitalize
-      puts "Please take a seat, " + name + "."
-    else
-     puts name + "? You mean " + name.capitalize + ", right?" 
-     puts "Don\'t you even know how to spell your name??" 
-     reply = gets.chomp
-    if reply.downcase == "yes" 
-else
-end
-end
+# #Learn to program exercise
+# puts "Hello, and welcome to seventh grade English." 
+# puts "My name is Mrs. Gabbard. And your name is....?"
+# name = gets.chomp
+#    if name == name.capitalize
+#       puts "Please take a seat, " + name + "."
+#     else
+#      puts name + "? You mean " + name.capitalize + ", right?" 
+#      puts "Don\'t you even know how to spell your name??" 
+#      reply = gets.chomp
+#      if reply.downcase == "yes" 
+# else
+#     puts "Try again!"
+# end
+# end
+
+# input = ''
+# while input != 'bye' 
+# puts input
+# input = gets.chomp
+# end
+# puts 'Come again soon!'
+
+
+# while true
+# puts 'What would you like to ask C to do?' 
+#    request = gets.chomp
+
+#   puts 'You say, "C, please ' + request + '"'
+#   puts 'C\'s response:' 
+#   puts '"C ' + request + ', too."'
+#   puts '"Papa ' + request + ', too."'
+#   puts '"Mama ' + request + ', too."' 
+#   puts '"Ruby ' + request + ', too."' 
+#   puts '"Nono ' + request + ', too."' 
+#   puts '"Emma ' + request + ', too."'
+#   puts
+#   if request == 'stop' 
+#   break
+#    end
+#  end 
+
+
+
+# puts names
+# puts names[1]
+# puts names[0]
+names = []
+names = ['Ada', 'Belle', 'Chris']
+names[4] = "Mike"
+puts names
+names[5] = "Antoinette"
+puts names
+
+
+
+
+
 
 
