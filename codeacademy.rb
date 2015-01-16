@@ -252,21 +252,34 @@
 # puts names
 # puts names[1]
 # puts names[0]
-names = []
-names = ['Ada', 'Belle', 'Chris']
-names[4] = "Mike"
-puts names
-names[5] = "Antoinette"
-puts names
+# names = []
+# names = ['Ada', 'Belle', 'Chris']
+# names[4] = "Mike"
+# puts names
+# names[5] = "Antoinette"
+# puts names
 
-def say_moo number_of_moos
-  puts 'moooooo....'*number_of_moos
-  'yellow submarine'
-end
+# def say_moo number_of_moos
+#   puts 'moooooo....'*number_of_moos
+#   'yellow submarine'
+# end
 
-x = say_moo 3
-puts x.capitalize + ', dude...'
-puts x         + '.'
+# x = say_moo 3
+# puts x.capitalize + ', dude...'
+# puts x         + '.'
+
+ #Matrices
+  times_table = []
+  4.times do |x| 
+    times_table[x] = []
+    4.times do |y| 
+      times_table[x][y] = x * y
+    end
+  end
+
+  puts times_table
+
+
 
 
 
