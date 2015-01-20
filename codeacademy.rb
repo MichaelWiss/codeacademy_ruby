@@ -335,6 +335,21 @@
 #     console.log("I know someone called " + names[i]);
 # }
 
+var text = " name is Michael Wiss.";
+var myName ="Michael"
+var hits = [] 
+
+
+for (i = 0; i < text.length; i ++){
+    if(text[i] === 'M'){
+    for (var j = i; j < (myName.length +       i); j++) {
+            hits.push(text[j]);
+            console.log("M= " + j);
+        }
+
+    }
+};
+
 
 
 
