@@ -370,17 +370,44 @@
 # };
 
 
-var myCondition = true;
+# var myCondition = true;
 
-var soloLoop = function(){
-  while(myCondition){
-    console.log("Looped once!");
-    myCondition = false; 
-  };
+# var soloLoop = function(){
+#   while(myCondition){
+#     console.log("Looped once!");
+#     myCondition = false; 
+#   };
   
+# };
+
+# soloLoop();
+
+
+var i = true
+var getToDaChoppa = function(){
+  do {console.log("It's the Choppa!")
+  }while(!i){
+  console.log("Goodbye!")
+  }
+ };
+
+getToDaChoppa();
+
+for (var i = 0; i < 5; i++){
+    console.log("Yo");
 };
 
-soloLoop();
+var i = true;
+while(i){
+    console.log("Yello");
+    i = false;
+};
+
+var m = true;
+do {console.log("Aloha");}
+  while(!m){
+      console.log("hello");
+}
 
 
 
