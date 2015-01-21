@@ -335,20 +335,52 @@
 #     console.log("I know someone called " + names[i]);
 # }
 
-var text = " name is Michael Wiss.";
-var myName ="Michael"
-var hits = [] 
+# var text = " name is Michael Wiss.";
+# var myName ="Michael"
+# var hits = [] 
 
 
-for (i = 0; i < text.length; i ++){
-    if(text[i] === 'M'){
-    for (var j = i; j < (myName.length +       i); j++) {
-            hits.push(text[j]);
-            console.log("M= " + j);
-        }
+# for (i = 0; i < text.length; i ++){
+#     if(text[i] === 'M'){
+#     for (var j = i; j < (myName.length +       i); j++) {
+#             hits.push(text[j]);
+#             console.log("M= " + j);
+#         }
 
-    }
+#     }
+# };
+
+# var text = " name is Michael Wiss.";
+# var myName ="Michael"
+# var hits = [] 
+
+
+# for (i = 0; i < text.length; i ++){
+#     if(text[i] === 'M'){
+#     for (var j = i; j < (myName.length +       i); j++) {
+#             hits.push(text[j]);
+#             console.log("M= " + j);
+#         }
+
+#     }
+#     if(hits.length === 0){console.log("Your name wasn't found!");
+# } else {
+#     console.log(hits);
+# }
+# };
+
+
+var myCondition = true;
+
+var soloLoop = function(){
+  while(myCondition){
+    console.log("Looped once!");
+    myCondition = false; 
+  };
+  
 };
+
+soloLoop();
 
 
 
