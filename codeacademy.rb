@@ -457,6 +457,54 @@ switch(answer) {
   
 }
 
+var answer = prompt("What kind of food do you like?");
+switch(answer){
+    case 'Chinese':
+        console.log("me too!");
+    break;
+    case 'Vietnamese':
+        console.log("yep!");
+    break;
+    case 'Thai':
+        console.log("Uh huh!");
+    break;
+    default:
+        console.log("That's not food")
+        break;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
