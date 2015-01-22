@@ -383,30 +383,50 @@
 # soloLoop();
 
 
-var i = true
-var getToDaChoppa = function(){
-  do {console.log("It's the Choppa!")
-  }while(!i){
-  console.log("Goodbye!")
-  }
- };
+# var i = true
+# var getToDaChoppa = function(){
+#   do {console.log("It's the Choppa!")
+#   }while(!i){
+#   console.log("Goodbye!")
+#   }
+#  };
 
-getToDaChoppa();
+# getToDaChoppa();
 
-for (var i = 0; i < 5; i++){
-    console.log("Yo");
-};
+# for (var i = 0; i < 5; i++){
+#     console.log("Yo");
+# };
 
-var i = true;
-while(i){
-    console.log("Yello");
-    i = false;
-};
+# var i = true;
+# while(i){
+#     console.log("Yello");
+#     i = false;
+# };
 
-var m = true;
-do {console.log("Aloha");}
-  while(!m){
-      console.log("hello");
+# var m = true;
+# do {console.log("Aloha");}
+#   while(!m){
+#       console.log("hello");
+# }
+
+
+var slaying = true;
+var youHit = Math.floor(Math.random() * 2);
+var damageThisRound = Math.floor(Math.random()*5 + 1);
+
+var totalDamage = 0;
+while(slaying){
+    if(youHit){
+    console.log("You hit the dragon");  
+totalDamage += damageThisRound;
+    if(totalDamage>=4){
+        console.log("The dragon is dead")
+        slaying = false;
+    } else { youHit = Math.floor(Math.random() * 2);}
+        } else{
+      console.log("You missed!");  
+    }
+    slaying = false;
 }
 
 
