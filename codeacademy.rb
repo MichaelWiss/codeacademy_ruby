@@ -474,6 +474,47 @@ switch(answer){
 }
 
 
+var hungry = true;
+var foodHere = true;
+
+
+var eat = function() {
+  if(hungry && foodHere){
+      return true
+  } else {
+      return false
+  }
+     
+  
+};
+
+
+    var user = prompt("How are you today?").toUpperCase();
+switch(true) {
+    case (user==='good'):
+        console.log("Well thats good!");
+        break;
+    case (user==='great'):
+        console.log("I hope your day stays that way");
+        break;
+    case (user === 'it is going good'):
+        console.log("Well your day is going better than mine");
+        break;
+    default:
+        console.log("I hope you can have a better day!");
+}
+
+
+var languages = ["HTML", "CSS", "JavaScript", "Python", "Ruby"];
+
+for (var i = 0; i < languages.length; i++){
+    console.log(languages[i]);
+};
+
+
+
+
+
 
 
 
