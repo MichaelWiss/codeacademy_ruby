@@ -443,6 +443,22 @@ isEven("hello")
 
 
 
+var answer = prompt("Which band is better?");
+
+switch(answer) {
+  case 'Rolling Stones':
+    console.log("Mick will never die!");
+    break;
+   case'Beatles':
+       console.log("Viva John Lennon!");
+    break;
+    default:
+    console.log("That's not a band!");
+  
+}
+
+
+
 
 
 
