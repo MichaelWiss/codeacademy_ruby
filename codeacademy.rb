@@ -562,6 +562,18 @@ buddy.species = "golden retriever";
 buddy.age = 5;
 
 
+var setAge = function (newAge) {
+this.age = newAge;
+};
+
+var bob = new Object();
+bob.age = 30;
+
+bob.setAge = setAge;
+  
+bob.setAge(50);
+
+
 
 
 
