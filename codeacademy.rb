@@ -607,6 +607,21 @@ rectangle.setWidth(8);
 rectangle.setHeight(6);
 
 
+function Cat(age, color) {
+  this.age = age;
+  this.color = color;
+}
+
+// make a Dog constructor here
+function Dog(age, color) {
+    this.age = age;
+    this.color = color;
+}
+var sam =new Cat(3, "black");
+var george =new Dog(4, "brown" );
+console.log(sam, george);
+
+
 
 
 
