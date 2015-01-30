@@ -687,6 +687,84 @@ var billy = new Person("Billy", 25);
 // get the difference in age between alice and billy using our function
 var diff = ageDifference(alice, billy);
 
+// Our person constructor
+function Person (name, age) {
+    this.name = name;
+    this.age = age;
+}
+
+// We can make a function which takes persons as arguments
+// This one computes the difference in ages between two people
+var ageDifference = function(person1, person2) {
+    return person1.age - person2.age;
+};
+
+// Make a new function, olderAge, to return the age of
+// the older of two people
+var olderAge = function(person1, person2) {
+    if(person1.age > person2.age) {
+        return person1.age;
+    } else {
+        return person2.age;
+    }
+};
+
+
+// Let's bring back alice and billy to test our new function
+var alice = new Person("Alice", 30);
+var billy = new Person("Billy", 35);
+
+console.log("The older person is " + olderAge(alice, billy));
+
+
+var bob = {
+    firstName: "Bob",
+    lastName: "Jones",
+    phoneNumber: "(650) 777-7777",
+    email: "bob.jones@example.com"
+};
+
+var mary = {
+    firstName: "Mary",
+    lastName: "Johnson",
+    phoneNumber: "(650) 888-8888",
+    email: "mary.johnson@example.com"
+};
+
+var contacts = [bob, mary];
+
+function printPerson(person) {
+    console.log(person.firstName + " " + person.lastName);
+}
+
+function list() {
+  var contactsLength = contacts.length;
+  for (var i = 0; i < contactsLength; i++) {
+    printPerson(contacts[i]);
+  }
+}
+
+/*Create a search function
+then call it passing "Jones"*/
+function search(lastName){
+    var contactsLength = contacts.length;
+      for (var i = 0; i < contactsLength; i++) {
+          if(lastName===contacts[i].lastName){
+    printPerson(contacts[i]);
+  }
+}
+}
+
+function add(firstName, lastName, phoneNumber, email){
+contacts[contacts.length] = {
+firstName: firstName, 
+lastName: lastName,
+phoneNumber: phoneNumber,
+email: email
+};
+};
+add ("Mike","Miller","(123) 456-7890","mm@gmail.com");
+list();
 
 
 
