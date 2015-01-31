@@ -767,6 +767,8 @@ add ("Mike","Miller","(123) 456-7890","mm@gmail.com");
 list();
 
 
+#js objects part 2
+
 
 
 
