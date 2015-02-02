@@ -770,6 +770,19 @@ list();
 #js objects part 2
 
 
+var james = {
+    job: "programmer",
+    married: false
+};
+
+function Person(job, married) {
+    this.job = job;
+    this.married = married;
+}
+
+var gabby = new Person("student", true);
+
+
 
 
 
