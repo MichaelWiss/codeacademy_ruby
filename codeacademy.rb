@@ -824,6 +824,62 @@ var me = new Person("Michael", 42);
 printPersonName(me);
 
 
+#class and prototype
+
+function Animal(name, numLegs) {
+    this.name = name;
+    this.numLegs = numLegs;
+};
+
+
+
+// create the sayName method for Animal
+Animal.prototype.sayName = function() {
+    console.log("Hi my name is " + this.name);
+}
+
+
+
+
+// provided code to test above constructor and method
+var penguin = new Animal("Captain Cook", 2);
+penguin.sayName();
+
+
+
+// the original Animal class and sayName method
+function Animal(name, numLegs) {
+    this.name = name;
+    this.numLegs = numLegs;
+}
+Animal.prototype.sayName = function() {
+    console.log("Hi my name is " + this.name);
+};
+
+// define a Penguin class
+function Penguin(name) {
+    this.name = name;
+    this.numLegs = 2;
+}
+
+// set its prototype to be a new instance of Animal
+Penguin.prototype = new Animal();
+
+function Penguin(name) {
+    this.name = name;
+    this.numLegs = 2;
+}
+
+// create your Emperor class here and make it inherit from Penguin
+function Emperor(name) {
+    this.name = name;
+}
+Emperor.prototype = new Penguin(); 
+// create an "emperor" object and print the number of legs it has
+var george = new Emperor("George");
+console.log(george.numLegs);
+
+
 
 
 
