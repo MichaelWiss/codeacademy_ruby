@@ -768,4 +768,12 @@ $(document).ready(function(){
    });
 });
 
+/* dblclick */
+
+$(document).ready(function(){
+  $('div').dblclick(function(){
+      $(this).fadeOut('fast');
+   });
+ });
+
 
