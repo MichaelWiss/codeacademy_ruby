@@ -288,6 +288,12 @@ a[0]
 a[3]
 puts a[0]
 
+histogram = Hash.new(0)
+histogram['ruby']
+puts histogram
+histogram['ruby'] = histogram['ruby'] + 1
+puts histogram
+
 
 
 

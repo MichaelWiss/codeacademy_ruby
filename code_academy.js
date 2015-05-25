@@ -428,7 +428,7 @@ var olderAge = function(person1, person2) {
 };
 
 
- Let's bring back alice and billy to test our new function
+ 
 var alice = new Person("Alice", 30);
 var billy = new Person("Billy", 35);
 
@@ -689,5 +689,15 @@ for(var x in myStudentReport) {
 }
 
 console.log("Your overall GPA is " + myStudentReport.getGPA());
+
+
+/* code academy jquery  */
+
+$(document).ready(function(){
+    $('.pull-me').click(function(){
+        $('.panel').slideToggle('slow');
+    });
+    
+});
 
 
