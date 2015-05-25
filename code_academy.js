@@ -733,4 +733,18 @@ $(document).ready(function(){
   $("div").css("border-radius", "10px");
 });
 
+/* using html method */
+
+$(document).ready(function(){
+    $('p').html("jQuery magic in action!");
+});
+
+/* capturing input using .val method and assigning to a var" */
+
+$(document).ready(function(){
+   $('#button').click(function(){
+   var toAdd = $('input[name=checkListItem]').val();
+   });
+});
+
 
