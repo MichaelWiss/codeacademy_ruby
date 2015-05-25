@@ -739,12 +739,23 @@ $(document).ready(function(){
     $('p').html("jQuery magic in action!");
 });
 
-/* capturing input using .val method and assigning to a var" */
+/* capturing input using .val method and assigning to a var */
 
 $(document).ready(function(){
    $('#button').click(function(){
    var toAdd = $('input[name=checkListItem]').val();
    });
 });
+
+/* adding input to list */
+
+$(document).ready(function(){
+   $('#button').click(function(){
+   var toAdd = $('input[name=checkListItem]').val();
+   $('.list').append('<div class="item">' + toAdd + '</div>')
+   });
+});
+
+
 
 
