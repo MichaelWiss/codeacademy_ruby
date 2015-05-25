@@ -708,4 +708,13 @@ $(document).ready(function(){
    $('#two').after($paragraph);
 });
 
+/* variables .remove method  */
+
+$(document).ready(function(){
+   var $paragraph = $('<p>Noise annoys</p>');
+   $('#one').after($paragraph);
+   $('#two').after($paragraph);
+   $('p').remove();
+});
+
 
