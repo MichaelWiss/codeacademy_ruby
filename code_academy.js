@@ -717,4 +717,14 @@ $(document).ready(function(){
    $('p').remove();
 });
 
+/* using addClass method */
+
+$(document).ready(function(){
+  $('#text').click(function() {
+    $(this).addClass('highlighted');
+  });
+});
+
+
+
 
