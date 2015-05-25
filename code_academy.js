@@ -700,4 +700,12 @@ $(document).ready(function(){
     
 });
 
+/* variables to store jquery objects */
+
+$(document).ready(function(){
+   var $paragraph = $('<p>Noise annoys</p>');
+   $('#one').after($paragraph);
+   $('#two').after($paragraph);
+});
+
 
