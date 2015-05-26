@@ -815,6 +815,10 @@ $(document).ready(function(){
   })
 })
 
+/* resizable jQuery ui */
 
+$(document).ready(function(){
+  $('div').resizable();
+});
 
 
