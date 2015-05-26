@@ -821,4 +821,16 @@ $(document).ready(function(){
   $('div').resizable();
 });
 
+/* angular controller */
+
+app.controller('MainController', ['$scope', function($scope) { 
+  $scope.title = 'Top Developer Manuals in Books';
+  $scope.promo = '50% off';
+  $scope.product = { 
+  name: 'The Book of Trees', 
+  price: 19 
+}
+}]);
+       
+
 
