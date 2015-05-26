@@ -799,4 +799,22 @@ $(document).ready(function(){
    });
 });
 
+/* keydown event */
+
+$(document).ready(function(){
+  $(document).keydown(function() {
+  $('div').animate({left:'+=10px'},500);
+  });
+});
+
+/* explode jQuery ui */
+
+$(document).ready(function(){
+  $('div').click(function(){
+    $(this).effect('explode');
+  })
+})
+
+
+
 
