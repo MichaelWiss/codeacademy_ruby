@@ -869,4 +869,11 @@ app.controller('MainController', ['$scope', function($scope) {
  
 }]);
 
+/* Learning jQuery book */
+
+$(document).ready(function() {
+  $('td:contains(Henry)').nextAll().addBack()
+  .addClass('highlight');
+});
+
 
